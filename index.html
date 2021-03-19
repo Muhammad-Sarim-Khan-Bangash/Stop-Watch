@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <style>
+      body {
+        background-color: #15753d;
+        text-align: center;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        color: #fff;
+        display: inline-block;
+      }
+      .main h1 {
+        font-size: 70px;
+        padding: 18px;
+        margin-left: 10px;
+        width: 80px;
+      }
+      .main {
+        background-color: #24b15e;
+      }
+      button {
+        margin-top: 15px;
+        margin-left: 10px;
+        background-color: white;
+        color: #146b38;
+        outline: none;
+        border: none;
+        padding: 1rem;
+        width: 120px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 50px;
+      }
+      button:focus {
+        outline: none;
+      }
+      button:hover {
+        opacity: 0.9;
+      }
+      .heading {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Stop Watch</h1>
+    <div class="main">
+      <h1 id="min">0</h1>
+      <h1 id="sec">0</h1>
+      <h1 id="msec">0</h1>
+    </div>
+    <div>
+      <button onclick="start()">Start</button>
+      <button onclick="pause()">Pause</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
